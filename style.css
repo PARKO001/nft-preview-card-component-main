@@ -37,6 +37,7 @@
     box-shadow: 0 0 1rem 1rem hsl(215, 53%, 11%), 0 0 2rem 1rem hsl(215, 55%, 8%) ;
 }
 .top{
+    position: relative;
     height: auto;
     width: 100%;
     /* border: 2px solid red; */
@@ -51,6 +52,7 @@
     background-color: var(--Cyan);
     /* border: 2px solid red; */
     opacity: 0;
+    transition: opacity .4s ease-in-out;
     height: 234px;
     width: 234px;
     border-radius: .5rem;
@@ -58,7 +60,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 20%;
+    top: 0;
     /* align-self: self-start; */
     /* align-items: flex-start; */
 
@@ -134,3 +136,9 @@
 .bottom a:hover{
     color: var(--Cyan);
 }
+
+@media screen and (max-width:600px) {
+    .container{
+        background-color: red;
+    }
+}    
