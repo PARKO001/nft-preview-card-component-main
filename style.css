@@ -21,7 +21,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: var(--Very-dark-blue-main-BG);
+
 }
 .container{
     height: auto;
@@ -127,6 +129,14 @@
     height: 1rem;
     width: auto;
     margin: 0 .5rem 0 0;
+}
+.attribution{
+    color: rgba(255, 255, 255, 0.529);
+    font-size: .7rem;
+}
+.attribution a{
+    text-decoration: none;
+    font-size: .8rem;
 }
 /* <--active states---> */
 #imgoverlay:hover{
